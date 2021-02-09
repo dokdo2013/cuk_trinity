@@ -11,22 +11,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Noto Sans KR'">
     <div style="max-width: 500px; margin: 0 auto">
-        <h1>강의인원조회</h1>
-        <div class="row">
-            <form method="post" class="form">
-                <label for="userId">트리니티 아이디</label>
-                <input class="form-control" type="text" name="userId" id="userId" required>
-                <label for="userPw">트리니티 패스워드</label>
-                <input class="form-control" type="text" name="userPw" id="userPw" required>
-                <label for="subjNo">강의번호</label>
-                <input class="form-control" type="text" name="subjNo" id="subjNo" required>
-                <label for="classNo">분반번호</label>
-                <input class="form-control" type="text" name="classNo" id="classNo">
-            </form>
-        </div>
+        <br>
+        <h1 style="font-size: 24px; font-weight: bold; text-align: center">강의인원조회</h1>
+        <br>
+        <form method="post" class="form">
+            <label for="userId">트리니티 아이디</label>
+            <input class="form-control" type="text" name="userId" id="userId" required>
+            <label for="userPw">트리니티 패스워드</label>
+            <input class="form-control" type="text" name="userPw" id="userPw" required>
+            <label for="subjNo">강의번호</label>
+            <input class="form-control" type="text" name="subjNo" id="subjNo" required>
+            <label for="classNo">분반번호</label>
+            <input class="form-control" type="text" name="classNo" id="classNo" required>
+            <br>
+            <button type="submit" class="btn btn-outline-primary btn-block">조회</button>
+        </form>
     </div>
     <script>
         $(document).ready(function(){
