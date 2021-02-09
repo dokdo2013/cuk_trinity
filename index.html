@@ -18,7 +18,7 @@
         <br>
         <h1 style="font-size: 24px; font-weight: bold; text-align: center">강의인원조회</h1>
         <br>
-        <form method="post" class="form">
+        <form method="get" class="form">
             <label for="userId">트리니티 아이디</label>
             <input class="form-control" type="text" name="userId" id="userId" required>
             <label for="userPw">트리니티 패스워드</label>
@@ -36,7 +36,7 @@
             $("form").on("submit", function(e){
                 e.preventDefault();
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "https://api.haenu.com/cuk/classStudents",
                     data: {
                         "userId": $("#userId").val(),
