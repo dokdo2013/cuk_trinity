@@ -33,7 +33,7 @@
     </div>
     <script>
         $(document).ready(function(){
-            $(form).on("submit", function(e){
+            $("form").on("submit", function(e){
                 e.preventDefault();
                 $.ajax({
                     type: "POST",
@@ -47,6 +47,9 @@
                     dataType: "dataType",
                     success: function (response) {
                         alert(response);
+                    },
+                    error: function(response){
+                        alert(response.responseText);
                     }
                 });
 
