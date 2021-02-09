@@ -44,7 +44,7 @@
                         "subjNo": $("#subjNo").val(),
                         "classNo": $("#classNo").val()
                     },
-                    dataType: "dataType",
+                    dataType: "application/json",
                     success: function (response) {
                         alert(unicodeToKor(response.responseText));
                     },
