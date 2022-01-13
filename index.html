@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuk Trinity API (2021.07 업데이트)</title>
+    <title>[2022] 수강인원 조회</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -37,7 +37,7 @@
                 e.preventDefault();
                 $.ajax({
                     type: "GET",
-                    url: "https://pwkf3flpmd.execute-api.ap-northeast-2.amazonaws.com/v1/classStudents",
+                    url: "https://49oxwvvi8h.execute-api.ap-northeast-2.amazonaws.com/default/classStudents",
                     data: {
                         "userId": $("#userId").val(),
                         "userPw": $("#userPw").val(),
